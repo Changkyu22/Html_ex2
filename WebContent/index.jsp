@@ -18,10 +18,10 @@
 			</div>
 			<ul class="header_nav">
 				<li><a href="">FETURE FILMS</a></li>
-				<li><a href="">SHORT FILMS</a></li>
-				<li><a href="">TECHNOLOGY</a></li>
-				<li><a href="">LOGIN</a></li>
-				<li><a href="">SIGNUP</a></li>
+				<li><a href="/Html_ex2/notice/notice.jsp">NOTICE</a></li>
+				<li><a href="/Html_ex2/login/login.jsp">LOGIN</a></li>
+				<li><a href="/Html_ex2/signup/signup.jsp">SIGNUP</a></li>
+				<li><a href="/Html_ex2/signup/signup_2.jsp">SIGNUP FORM</a></li>
 				<li><a href="">ABOUT</a></li>
 			</ul>
 		</div>

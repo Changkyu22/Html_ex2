@@ -32,14 +32,14 @@ header{
 
 
 .header_nav{
-	margin-left: 800px;
+	margin-left: 930px;
 }
 .header_nav > li{
 	float: left;
 	margin-left: 30px;
 	font-weight: bold;
 	letter-spacing: 3px;
-	font-size: medium;
+	font-size: 14px;
 	font-weight: bolder;
 	font-style: arial;
 	line-height: 50px;
@@ -71,7 +71,6 @@ header{
 }
 
 .movie_wrap{
-	width: 100%;
 	height: 808px;
 	position: relative;
 	margin-bottom: 150px;
@@ -170,7 +169,6 @@ header{
 
 /************************************Footer***************************************/
 .footer_wrap{
-	width: 
 	margin: 0 auto;
 }
 
@@ -187,7 +185,295 @@ header{
 	letter-spacing: 4px;
 	line-height: 40px;
 	margin-bottom: 150px;
+}
+
+
+
+/************************************ Login ***************************************/
+
+.login_wrap {
+	width: 100%;
+	height: 860px;
+	position: relative;
+}
+
+.loginlogo{
+	width: 100%;
+}
+
+
+.login_wrap p {
+	z-index: 990;
+	position: absolute;
+	top: 45%;
+	left: 44%;
+	color: white;
+	font-size: 50px;
+	font-weight: bold;
+	letter-spacing: 10px;
+}
+
+.loginbox_wrap {
+	box-sizing: border-box;
+/* 	border: 1px solid black; */
+	width: 600px;
+	height: 250px;
+	margin: 0 auto;
+	position: relative;
+}
+
+.logincha{
+	position: absolute;
+	top: 10%;
+	float: left;
+	display: inline-block;
+	z-index: 200;
+}
+
+.id{
+	width: 200px;
+	height: 25px;
+	top: 35%;
+	left: 30%;
+	z-index: 500;
+	position: absolute;
+	background-color: rgba(107, 91, 149, 0.5);
+}
+
+.pw{
+	width: 200px;
+	height: 25px;
+ 	top: 53%;
+	left: 30%;
+	z-index: 500;
+	position: absolute;
+	background-color: rgba(107, 91, 149, 0.5);
+}
+
+.loginbutton{
+	top : 30%;
+	right: 5%;
+	z-index: 500;
+	position: absolute;
 	
 }
+
+
+.loginletter{
+	margin-bottom: 200px;
+	text-align: center;
+	color: rgba(29, 29, 29, 0.7);
+	font-size: 17px;
+	letter-spacing: 0px;
+	font-weight: bold;
+	line-height: 20px;
+}
+
+/************************************ Signup ***************************************/
+
+.signup_wrap {
+	position: relative;
+	margin-bottom: 100px;
+}
+
+.signup{
+	width: 100%;
+	height: 860px;
+}
+
+.signup_wrap p {
+	z-index: 990;
+	position: absolute;
+	top: 45%;
+	left: 40%;
+	color: white;
+	font-size: 50px;
+	font-weight: bold;
+	letter-spacing: 10px;
+}
+
+.signup_clause{
+	width: 1000px;
+	margin: 0 auto;
+}
+
+.signup_clause > input {
+	width: 25px;
+	height: 25px;
+	display: inline-block;
+/* 	background-color: rgb(91, 94, 166); */
+	text-shadow: aqua;
+}
+
+.signup_clause li{
+	list-style: decimal;
+	font-size: 20px;
+	margin-bottom: 30px;
+}
+.signup_clause p {
+	font-family: comic sans ms 보통;
+	font-weight: bold;
+	font-size: 20px;	
+}
+
+.submit{
+	width: 150px;
+	height: 70px;
+	margin: 0 auto;
+	text-align: center;
+	line-height: 5px;
+}
+
+.signbutton{
+	width: 50px;
+	height: 30px;
+}
+
+/************************************ Signup Form ***************************************/
+
+.form_wrap{	
+}
+
+.form{
+	width: 1920px;
+	height: 805px;
+	margin-bottom: 50px;
+}
+
+.form_wrap p {
+	z-index: 990;
+	position: absolute;
+	top: 50%;
+	left: 40%;
+	color: white;
+	font-size: 50px;
+	font-weight: bold;
+	letter-spacing: 10px;
+}
+
+form{
+	width: 1500px;
+	height: 500px;
+	margin: 0 auto;
+}
+
+/* .input{ */
+/* 	margin-left: 30px; */
+/* } */
+
+.form_input{
+	width: 500px;
+	height: 850px;
+	margin: 0 auto;
+	background-image: url("/Html_ex2/images/common/upupup.png");
+	padding: 20px 50px 20px 50px;
+}
+
+.inputbox{
+	margin-top: 50px;
+	margin-left: 130px;
+}
+
+.form_input input{
+	width: 500px;
+	height: 30px;
+	text-align: right;
+	margin-bottom: 15px;
+	background-color: rgba(255, 255, 255, 0.5);
+}
+
+.form_input select{
+	width: 500px;
+	height: 30px;
+	text-align: right;
+	margin-bottom: 15px;
+	background-color: rgba(255, 255, 255, 0.5);
+}
+
+.form_input option{
+	text-align: right;
+}
+
+.form_input p {
+	font-size: 15px;
+	font-weight: bold;
+}
+
+#email{
+	width: 250px;
+	height: 30px;
+}
+
+#emailselect{
+	width:200px;
+	height: 30px;
+	margin-left: 40px;
+}
+
+#number{
+	width: 300px;
+	height: 30px;
+	margin-top: -5px;
+	margin-bottom: 5px;
+}
+
+#numberbutton{
+	margin-left: 45px;
+	width: 150px;
+	height: 30px;
+	text-align: center;
+	margin-bottom: 5px;
+	margin-top: -5px;
+}
+
+#numberid{
+	background-color: rgba(255, 255, 255, 0.5);
+}
+
+#submitform{
+	margin-top: 30px;
+	margin-left: 180px;
+	width: 150px;
+	height: 30px;
+	text-align: center;
+	background-color: rgba(255, 255, 255, 0.7);
+}
+
+/************************************ Notice ***************************************/
+
+.notice{
+	width:1905px;
+	height: 860px;
+	margin-bottom: 50px;
+}
+
+.notice_wrap p {
+	z-index: 990;
+	position: absolute;
+	top: 55%;
+	left: 45%;
+	color: white;
+	font-size: 50px;
+	font-weight: bold;
+	letter-spacing: 10px;
+}
+
+
+.noticetable{
+	width: 1300px;
+	height: 600px;
+	margin: 0 auto;
+}
+
+.noticetable > table{
+	margin: 30px 100px 0px 100px;
+}
+
+
+
+
+
+
+
 
 
