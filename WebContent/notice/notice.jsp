@@ -37,16 +37,16 @@
 				<p>Notice
 				<table class="table">
 					<thead class="thead"><tr><th>NO</th><th>SUBJECT</th><th>NAME</th><th>DATE</th><th>HIT</th></tr></thead>
-					<tr><td class="no">1</td><td class="subject" style="color: black;"><a href="https://www.fncent.com/b/notice/41634">엔플라잉(N.Flying) 6TH MINI ALBUM [야호(夜好)] 공개 사진 첨부파일 </a></td><td class="name">관리자</td><td class="date">2019-10-16</td><td class="hit">513</td></tr>
-					<tr><td class="no">2</td><td class="subject">[안내] Tony’s 1st Fan Meeting ‘Under the Blue Sky’ 쌀 화환 설치 신청 안내</td><td class="name">관리자</td><td class="date">2019-10-16</td><td class="hit">77</td></tr>
-					<tr><td class="no">3</td><td class="subject">[콘서트] N.Flying FLY HIGH PROJECT NOTE 5.야호(夜好) 사진 첨부파일</td><td class="name">관리자</td><td class="date">2019-10-16</td><td class="hit">545</td></tr>
-					<tr><td class="no">4</td><td class="subject">[안내] 배우 정유진 tvN ‘유령을 잡아라’ 출연 안내 사진 첨부파일</td><td class="name">관리자</td><td class="date">2019-10-16</td><td class="hit">212</td></tr>
-					<tr><td class="no">5</td><td class="subject">[콘서트] 2019 SF9 LIVE FANTASY #2 UNIXERSE IN MACAU 공연 안내 사진 첨부파일</td><td class="name">관리자</td><td class="date">2019-10-16</td><td class="hit">2</td></tr>
-					<tr><td class="no">6</td><td class="subject">[안내] 배우 이동건 TV조선 ‘레버리지 : 사기조작단’ 출연 안내 사진 첨부파일</td><td class="name">관리자</td><td class="date">2019-10-16</td><td class="hit">333</td></tr>
-					<tr><td class="no">7</td><td class="subject">[콘서트] 2019 SF9 LIVE FANTASY #2 UNIXERSE IN BANGKOK 공연 안내 사진 첨부파일</td><td class="name">관리자</td><td class="date">2019-10-16</td><td class="hit">55</td></tr>
-					<tr><td class="no">8</td><td class="subject">[예약판매] N.Flying 6TH MINI ALBUM [야호(夜好)] BE AWAKE Ver / AWAKENED B 사진 첨부파일	</td><td class="name">관리자</td><td class="date">2019-10-16</td><td class="hit">32</td></tr>
-					<tr><td class="no">9</td><td class="subject">[안내] 배우 이동건, 뮤지컬 <보디가드> 출연 및 티켓 오픈 안내 사진 첨부파일</td><td class="name">관리자</td><td class="date">2019-10-16</td><td class="hit">1234</td></tr>
-					<tr><td class="no">10</td><td class="subject">[콘서트] N.Flying FLY HIGH PROJECT NOTE5.</td><td class="name">관리자</td><td class="date">2019-10-16</td><td class="hit">777</td></tr>
+					<tr><td class="no">1</td><td class="subject" style="color: black;"><a href="https://www.fncent.com/b/notice/41634">[NOTICE] Enjoy blindsided testimonials from the Crazy 8’s, touting the transformative impact </a></td><td class="name">Admin</td><td class="date">2019-10-16</td><td class="hit">513</td></tr>
+					<tr><td class="no">2</td><td class="subject">[NOTICE] Under “My Experience” there is a section to select and upload files.</td><td class="name">Admin</td><td class="date">2019-10-16</td><td class="hit">77</td></tr>
+					<tr><td class="no">3</td><td class="subject">[CONCERT] Add the link to your online portfolio/demo reel to the Website section under “My Experience.”</td><td class="name">Admin</td><td class="date">2019-10-16</td><td class="hit">545</td></tr>
+					<tr><td class="no">4</td><td class="subject">[NOTICE] Demo reels should be one to three minutes in length.</td><td class="name">Admin</td><td class="date">2019-10-16</td><td class="hit">212</td></tr>
+					<tr><td class="no">5</td><td class="subject">[CONCERT] In 2012 Pixar launched "Pixar in Concert", a compilation of imagery from each of the studio's</td><td class="name">Admin</td><td class="date">2019-10-16</td><td class="hit">2</td></tr>
+					<tr><td class="no">6</td><td class="subject">[NOTICE] musical performance from a live orchestra.</td><td class="name">Admin</td><td class="date">2019-10-16</td><td class="hit">333</td></tr>
+					<tr><td class="no">7</td><td class="subject">[CONCERT] Ratatouille in Concert Salem Symphony December 23, 2017 Elsinore Theatre</td><td class="name">Admin</td><td class="date">2019-10-16</td><td class="hit">55</td></tr>
+					<tr><td class="no">8</td><td class="subject">[SELLING] technical excellence and are always looking for talented people to enrich our work</td><td class="name">Admin</td><td class="date">2019-10-16</td><td class="hit">32</td></tr>
+					<tr><td class="no">9</td><td class="subject">[NOTICE] Jim Morris - President, Pixar Animation Studios</td><td class="name">Admin</td><td class="date">2019-10-16</td><td class="hit">1234</td></tr>
+					<tr><td class="no">10</td><td class="subject">[CONCERT] Auntie Edna learns just why Bob is so tired after agreeing to babysit Jack-Jack.</td><td class="name">Admin</td><td class="date">2019-10-16</td><td class="hit">777</td></tr>
 				</table>
 				<table class="table2">
 					<tr>

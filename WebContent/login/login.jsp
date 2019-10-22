@@ -36,9 +36,14 @@
 		
 		<div class="loginbox_wrap">
 			<img alt="" src="/Html_ex2/images/common/loginbox.jpg" class="logincha">
-			<input type="text" placeholder="ID 입력" class="id">
-			<input type="password" placeholder="PW 입력" class="pw">
-			<a href=""><img alt="" src="/Html_ex2/images/common/loginbutton.png" class="loginbutton"></a>
+			<form action="/Html_ex2/index.jsp">
+				<p><input type="text" placeholder="ID 입력" class="id"></p>
+				<p><input type="password" placeholder="PW 입력" class="pw"></p>
+				<p><button>Login</button></p>
+				<p><input type="submit"></p>
+				<p><input type="button" value="login"></p>
+				<a href=""><img alt="" src="/Html_ex2/images/common/loginbutton.png" class="loginbutton"></a>
+			</form>
 		</div>
 		
 		
