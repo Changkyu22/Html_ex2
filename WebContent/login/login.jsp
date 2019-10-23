@@ -7,6 +7,35 @@
 	<link href="/Html_ex2/css/reset.css" rel="stylesheet">
 	<link href="/Html_ex2/css/layout.css" rel="stylesheet">
 	<script src="https://kit.fontawesome.com/a076d05399.js"></script>
+	<script type="text/javascript">
+		function go() {
+			var id = document.getElementById("id").value;
+			var pw = document.getElementById("pw").value;
+			if(id == "" || pw == ""){
+				alert("입력하세요")
+			}else{
+				alert("입력완료")
+			}
+			return false;
+		}
+		
+		function go2() {
+			var id = document.getElementById("id").value;
+			var pw = document.getElementById("pw").value;
+			if(id == "" || pw == ""){
+				alert("입력하세요")
+			}else{
+				alert("입력완료")
+			}
+		}
+		
+		function t1() {
+			var r1 = document.getElementById("id").innerText="아이디를 입력하세요";
+			
+			
+		}
+	
+	</script>
 <title>Insert title here</title>
 </head>
 <body>
@@ -35,13 +64,15 @@
 		</div>
 		
 		<div class="loginbox_wrap">
-			<img alt="" src="/Html_ex2/images/common/loginbox.jpg" class="logincha">
+<!-- 			<img alt="" src="/Html_ex2/images/common/loginbox.jpg" class="logincha"> -->
 			<form action="/Html_ex2/index.jsp">
-				<p><input type="text" placeholder="ID 입력" class="id"></p>
-				<p><input type="password" placeholder="PW 입력" class="pw"></p>
-				<p><button>Login</button></p>
+				<p><input type="text" placeholder="ID 입력" class="id" id="id"></p> 
+				<div id="r1"></div>
+				<p><input type="password" placeholder="PW 입력" class="pw" id="pw"></p>
+				<div id="r2"></div>
+				<p><button onclick="return go()">Login</button></p>
 				<p><input type="submit"></p>
-				<p><input type="button" value="login"></p>
+				<p><input type="button" value="login" onclick="t1()" id="c1"></p>
 				<a href=""><img alt="" src="/Html_ex2/images/common/loginbutton.png" class="loginbutton"></a>
 			</form>
 		</div>

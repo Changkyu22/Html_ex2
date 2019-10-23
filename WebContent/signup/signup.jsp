@@ -36,25 +36,72 @@
 		<div class="signup_clause">
 			<ol>
 				<li>
-					<p>이용에 관한 약관동의&nbsp;<input type="checkbox"><br>
+					<p>전체동의&nbsp;<input type="checkbox" id="c0" class="all"><br>
+				</li>
+				<li>
+					<p>이용에 관한 약관동의&nbsp;<input type="checkbox" id="c1" class="all"><br>
 					<textarea rows="50" cols="150" >이용목적에 동의합니다.</textarea>
 				</li>
 				<li>
-					<p>개인정보 수집에 관한 약관동의&nbsp;<input type="checkbox"><br>
+					<p>개인정보 수집에 관한 약관동의&nbsp;<input type="checkbox" class="all"><br>
 					<textarea rows="50" cols="150" >정보수집에 동의합니다.</textarea>
 				</li>
 				<li>
-					<p>SNS등 광고 메세지 수신동의&nbsp;<input type="checkbox"><br>
+					<p>SNS등 광고 메세지 수신동의&nbsp;<input type="checkbox" class="all"><br>
 					<textarea rows="50" cols="150" >광고알림에 동의합니다.</textarea>
 				</li>
 			</ol>	
 		</div>
 		
 		<div class="submit">
-			<a href="/Html_ex2/signup/signup_2.jsp"><input type="submit" class="signbutton"></a>
+			<input type="submit" class="signbutton" id="btn">
 			<a href="/Html_ex2/signup/signup.jsp"><input type="reset" class="signbutton"></a>
 		</div>
 	</section>
+	<!--------------------------------------------- Login JS ------------------------------------------------->
+	<script type="text/javascript">
+		var c0 = document.getElementById("c0");
+		var all = document.getElementsByClassName("all");
+		var btn = document.getElementById("btn");
+		
+		c0.addEventListener("click", function() {
+			for(var i=0; i<all.length; i++){
+				all[i].checked=this.checked;
+			}
+		});
+		
+		///////////////////////////////////////////////////////
+		
+		btn.addEventListener("click", function() {
+			if(c0.checked){
+				location.href="./signup/signup_2.jsp";
+			}else{
+				alert("약관에 동의하세요");
+				location.reload;
+			}
+		});
+		
+		///////////////////////////////////////////////////////
+		for(var j=0; j<all.length; j++){
+			all[j].addEventListener("click", function() {
+				var num = 0;
+				for(var i=1; i<all.length; i++){
+					if(all[i].checked){
+						num = num +1;
+					}else{
+						num = num -1;
+					}
+				} // for 끝
+				if(num == 3){
+					c0.checked = true;
+				}else{
+					c0.checked = false;
+				}
+			});
+		} // for 끝
+		
+		
+	</script>
 
 	<!--------------------------------------------- Footer ------------------------------------------------->
 	<div class="sns_wrap">
