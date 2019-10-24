@@ -74,7 +74,7 @@
 		
 		btn.addEventListener("click", function() {
 			if(c0.checked){
-				location.href="./signup/signup_2.jsp";
+				location.href="/Html_ex2/signup/signup_2.jsp";
 			}else{
 				alert("약관에 동의하세요");
 				location.reload;

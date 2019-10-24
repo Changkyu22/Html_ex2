@@ -36,13 +36,17 @@
 		<div class="form_input">
 			<img alt="" src="/Html_ex2/images/common/pixarlogo.png" class="inputbox">
 			<p>아이디<br>
-				<input type="text" placeholder="@pixar.com">
+				<input type="text" placeholder="@pixar.com(6자 이상 기입)" id="idconfirm"><input type="button" value="중복확인" id="idbutton">
+				<div id="checkid"></div>
 			<p>비밀번호<br>
-				<input type="password" placeholder="영어+특수문자 조합 8자 이상">
+				<input type="password" placeholder="8자 이상 기입" id="pwconfirm">
+				<div id="checkpw1"></div>
 			<p>비밀번호 재확인<br>
-				<input type="password" placeholder="영어+특수문자 조합 8자 이상">
+				<input type="password" placeholder="8자 이상 기입" id="pwconfirm2">
+				<div id="checkpw2"></div>
 			<p>이름<br>
-				<input type="text">
+				<input type="text" placeholder="2자 이상 기입" id="nameconfirm">
+				<div id="checkname"></div>
 			<p>생년월일<br>
 				<input type="date">
 			<p>성별<br>
@@ -53,7 +57,7 @@
 					</optgroup>
 				</select>
 			<p>E-MAIL<br>
-				<input type="email" id="email">
+				<input type="email" id="email" placeholder="2자 이상 기입">
 				<select id="emailselect">
 					<option>@gmail.com</option>
 					<option>@naver.com</option>
@@ -62,6 +66,7 @@
 					<option>@nate.com</option>
 					<option>@paran.com</option>
 				</select>
+				<div id="checkemail"></div>
 			<p>휴대전화<br>
 				<select name="nationNo" class=sel id="nationNo" aria-label="전화번호 입력"> 
 					<option value="233">가나 +233</option>
@@ -75,11 +80,85 @@
 					<option value="233">브라질 +55</option>
 					<option value="233">스위스 +41</option>					
 				</select>	
-				<input type="text" id="number" placeholder="휴대번호 입력"><input type="button" value="인증하기" id="numberbutton">
+				<input type="text" id="number" placeholder="휴대번호 입력(2자 이상 입력)"><input type="button" value="인증하기" id="numberbutton">
+				<div id="checknumber"></div>
 				<input type="text" placeholder="인증번호를 입력하세요" readonly="readonly" id="numberid">
 				<input type="submit" id="submitform">
 		</div>	
 	</section>
+	
+	
+	<!--------------------------------------------- SignUpForm JS ------------------------------------------------->
+	<script type="text/javascript">
+		var idconfirm = document.getElementById("idconfirm");
+		var checkid = document.getElementById("checkid");
+		var pwconfirm = document.getElementById("pwconfirm");
+		var pwconfirm2 = document.getElementById("pwconfirm2");
+		var nameconfirm = document.getElementById("nameconfirm");
+		var email = document.getElementById("email");
+		var number = document.getElementById("number");
+		
+		idconfirm.addEventListener("blur", function() {
+			if(idconfirm.value.length > 5){
+				checkid.innerHTML="확인되었습니다."
+				checkid.style['color']="blue";
+			}else{
+				checkid.innerHTML="6자 이상 입력하세요"
+					checkid.style['color']="red";
+			}
+		});
+		
+		pwconfirm.addEventListener("blur", function() {
+			if(pwconfirm.value.length > 7){
+				checkpw1.innerHTML="확인되었습니다."
+				checkpw1.style['color']="blue";
+			}else{
+				checkpw1.innerHTML="8자 이상 입력하세요."
+				checkpw1.style['color']="red";
+			}
+		});
+		
+		pwconfirm2.addEventListener("blur", function() {
+			if(pwconfirm2.value == pwconfirm.value){
+				checkpw2.innerHTML="비밀번호가 확인되었습니다."
+				checkpw2.style['color']="blue";
+			}else{
+				checkpw2.innerHTML="비밀번호가 일치하지 않습니다."
+				checkpw2.style['color']="red";
+			}
+		});
+		
+		nameconfirm.addEventListener("blur", function() {
+			if(nameconfirm.value.length > 1){
+				checkname.innerHTML="확인되었습니다."
+				checkname.style['color']="blue";
+			}else{
+				checkname.innerHTML="2자 이상 입력하세요"
+				checkname.style['color']="red";
+			}
+		});
+		
+		email.addEventListener("blur", function() {
+			if(email.value.length > 1){
+				checkemail.innerHTML="확인되었습니다."
+				checkemail.style['color']="blue";
+			}else{
+				checkemail.innerHTML="2자 이상 입력하세요"
+				checkemail.style['color']="red";
+			}
+		});
+		
+		number.addEventListener("blur", function() {
+			if(number.value.length > 1){
+				checknumber.innerHTML="인증하기 버튼을 누르세요";
+				checknumber.style['color']="blue";
+			}else{
+				checknumber.innerHTML="1자 이상 입력하세요"
+				checknumber.style['color']="red";
+			}
+		});
+		
+	</script>
 	<!--------------------------------------------- Footer ------------------------------------------------->
 	<div class="sns_wrap">
 			<a href="https://twitter.com/DisneyPixar"><i class="fab fa-twitter-square" style="font-size: 1.8em;"></i></a>
