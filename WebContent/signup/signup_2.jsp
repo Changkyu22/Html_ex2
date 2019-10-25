@@ -28,63 +28,63 @@
 	</header>
 	<!--------------------------------------------- Main ------------------------------------------------->
 	<section>
-		<div class="form_wrap">
-			<img alt="" src="/Html_ex2/images/common/form.jpg" class="form">
-			<p class="signupform">SIGNUP FORM</p>
-		</div>
-		
-		<div class="form_input">
-			<img alt="" src="/Html_ex2/images/common/pixarlogo.png" class="inputbox">
-			<p>아이디<br>
-				<input type="text" placeholder="@pixar.com(6자 이상 기입)" id="idconfirm"><input type="button" value="중복확인" id="idbutton">
-				<div id="checkid"></div>
-			<p>비밀번호<br>
-				<input type="password" placeholder="8자 이상 기입" id="pwconfirm">
-				<div id="checkpw1"></div>
-			<p>비밀번호 재확인<br>
-				<input type="password" placeholder="8자 이상 기입" id="pwconfirm2">
-				<div id="checkpw2"></div>
-			<p>이름<br>
-				<input type="text" placeholder="2자 이상 기입" id="nameconfirm">
-				<div id="checkname"></div>
-			<p>생년월일<br>
-				<input type="date">
-			<p>성별<br>
-				<select>
-					<optgroup label="성별">
-						<option>남성</option>
-						<option>여성</option>
-					</optgroup>
-				</select>
-			<p>E-MAIL<br>
-				<input type="email" id="email" placeholder="2자 이상 기입">
-				<select id="emailselect">
-					<option>@gmail.com</option>
-					<option>@naver.com</option>
-					<option>@daum.com</option>
-					<option>@yahoo.com</option>
-					<option>@nate.com</option>
-					<option>@paran.com</option>
-				</select>
-				<div id="checkemail"></div>
-			<p>휴대전화<br>
-				<select name="nationNo" class=sel id="nationNo" aria-label="전화번호 입력"> 
-					<option value="233">가나 +233</option>
-					<option value="233">네팔 +97</option>
-					<option value="233">니제르 +227</option>
-					<option value="233">대한민국 +82</option>
-					<option value="233">독일 +49</option>
-					<option value="233">덴마크 +45</option>
-					<option value="233">멕시코 +52</option>
-					<option value="233">벨기에 +32</option>
-					<option value="233">브라질 +55</option>
-					<option value="233">스위스 +41</option>					
-				</select>	
-				<input type="text" id="number" placeholder="휴대번호 입력(2자 이상 입력)"><input type="button" value="인증하기" id="numberbutton">
-				<div id="checknumber"></div>
-				<input type="text" placeholder="인증번호를 입력하세요" readonly="readonly" id="numberid">
-				<input type="submit" id="submitform">
-		</div>	
+			<div class="form_wrap">
+				<img alt="" src="/Html_ex2/images/common/form.jpg" class="form">
+				<p class="signupform">SIGNUP FORM</p>
+			</div>
+			
+			<div class="form_input">
+				<img alt="" src="/Html_ex2/images/common/pixarlogo.png" class="inputbox">
+				<p>아이디<br>
+					<input type="text" placeholder="@pixar.com(6자 이상 기입)" id="idconfirm"><input type="button" value="중복확인" id="idbutton">
+					<div id="checkid"></div>
+				<p>비밀번호<br>
+					<input type="password" placeholder="8자 이상 기입" id="pwconfirm">
+					<div id="checkpw1"></div>
+				<p>비밀번호 재확인<br>
+					<input type="password" placeholder="8자 이상 기입" id="pwconfirm2">
+					<div id="checkpw2"></div>
+				<p>이름<br>
+					<input type="text" placeholder="2자 이상 기입" id="nameconfirm">
+					<div id="checkname"></div>
+				<p>생년월일<br>
+					<input type="date">
+				<p>성별<br>
+					<select>
+						<optgroup label="성별">
+							<option>남성</option>
+							<option>여성</option>
+						</optgroup>
+					</select>
+				<p>E-MAIL<br>
+					<input type="email" id="email" placeholder="2자 이상 기입">
+					<select id="emailselect">
+						<option>@gmail.com</option>
+						<option>@naver.com</option>
+						<option>@daum.com</option>
+						<option>@yahoo.com</option>
+						<option>@nate.com</option>
+						<option>@paran.com</option>
+					</select>
+					<div id="checkemail"></div>
+				<p>휴대전화<br>
+					<select name="nationNo" class=sel id="nationNo" aria-label="전화번호 입력"> 
+						<option value="233">가나 +233</option>
+						<option value="233">네팔 +97</option>
+						<option value="233">니제르 +227</option>
+						<option value="233">대한민국 +82</option>
+						<option value="233">독일 +49</option>
+						<option value="233">덴마크 +45</option>
+						<option value="233">멕시코 +52</option>
+						<option value="233">벨기에 +32</option>
+						<option value="233">브라질 +55</option>
+						<option value="233">스위스 +41</option>					
+					</select>	
+					<input type="text" id="number" placeholder="휴대번호 입력(2자 이상 입력)"><input type="button" value="인증하기" id="numberbutton">
+					<div id="checknumber"></div>
+					<input type="text" placeholder="인증번호를 입력하세요" readonly="readonly" id="numberid">
+					<input type="submit" id="submitform">
+			</div>	
 	</section>
 	
 	
@@ -97,6 +97,8 @@
 		var nameconfirm = document.getElementById("nameconfirm");
 		var email = document.getElementById("email");
 		var number = document.getElementById("number");
+		var submitform = document.getElementById("submitform");
+		var frm = document.getElementById("frm");
 		
 		idconfirm.addEventListener("blur", function() {
 			if(idconfirm.value.length > 5){
@@ -156,6 +158,14 @@
 				checknumber.innerHTML="1자 이상 입력하세요"
 				checknumber.style['color']="red";
 			}
+		});
+		
+		frm.addEventListener("click", function() {
+			frm.sumit();
+		});
+		
+		idbutton.addEventListener("click", function() {
+			open("")
 		});
 		
 	</script>

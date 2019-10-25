@@ -6,17 +6,33 @@
 <meta charset="UTF-8">
 	<link href="/Html_ex2/css/reset.css" rel="stylesheet">
 	<link href="/Html_ex2/css/layout.css" rel="stylesheet">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+	
+	<!-- jQuery library -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	
+	<!-- Latest compiled JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
 	<script src="https://kit.fontawesome.com/a076d05399.js"></script>
 	<script type="text/javascript">
 		function go() {
 			var id = document.getElementById("id").value;
 			var pw = document.getElementById("pw").value;
+			var formcheck = document.getElementById("formcheck");
+			var c1 = document.getElementById("c1");
+			
 			if(id == "" || pw == ""){
-				alert("입력하세요")
-			}else{
-				alert("입력완료")
-			}
-			return false;
+				alert("입력하세요");
+			}else if(id.length > 5 && pw.length > 8){
+					alert("로그인 성공");
+					formcheck.submit();
+				}else{
+					alert("ID/PW를 다시 확인하세요 (아이디는 6자 이상, 패스워드 8자 이상)");
+// 					location.href="./login.jsp";
+				
+				}
 		}
 		
 		function go2() {
@@ -32,8 +48,10 @@
 		function t1() {
 			var r1 = document.getElementById("id").innerText="아이디를 입력하세요";
 			
-			
 		}
+		
+		
+		
 	
 	</script>
 <title>Insert title here</title>
@@ -60,20 +78,22 @@
 	<section>
 		<div class="login_wrap">
 			<a href=""><img alt="/Html_ex2//login/login.jsp" src="/Html_ex2/images/common/login.jpg" class="loginlogo"></a>
+			
 			<p class="loginletter">PIXAR LOGIN</p>
 		</div>
 		
 		<div class="loginbox_wrap">
-<!-- 			<img alt="" src="/Html_ex2/images/common/loginbox.jpg" class="logincha"> -->
-			<form action="/Html_ex2/index.jsp">
+ 			<img alt="" src="/Html_ex2/images/common/loginbox.jpg" class="logincha">
+ 			
+			<form action="/Html_ex2/index.jsp" id="formcheck">
 				<p><input type="text" placeholder="ID 입력" class="id" id="id"></p> 
 				<div id="r1"></div>
 				<p><input type="password" placeholder="PW 입력" class="pw" id="pw"></p>
 				<div id="r2"></div>
-				<p><button onclick="return go()">Login</button></p>
-				<p><input type="submit"></p>
-				<p><input type="button" value="login" onclick="t1()" id="c1"></p>
-				<a href=""><img alt="" src="/Html_ex2/images/common/loginbutton.png" class="loginbutton"></a>
+<!-- 				<p><button onclick="return go()">Login</button></p> -->
+<!-- 				<p><input type="submit"></p> -->
+				<p><input type="button" value="login" onclick="go()" id="c1" class="btn btn-primary active"></p>
+<!-- 				<p><button onclick="return go()" id="c1" class="btn btn-primary active" >LOGIN</button> </p> -->
 			</form>
 		</div>
 		

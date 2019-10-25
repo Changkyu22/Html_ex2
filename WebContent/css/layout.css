@@ -250,12 +250,15 @@ header{
 	background-color: rgba(107, 91, 149, 0.5);
 }
 
-.loginbutton{
-	top : 30%;
-	right: 5%;
+.btn{
+	top : 38%;
+	right: 13%;
 	z-index: 500;
 	position: absolute;
-	
+	font-size: large;
+	width: 100px;
+	height: 50px;
+	border-radius: 50%;
 }
 
 
